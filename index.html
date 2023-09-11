@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 80%;
+        margin: auto;
+    }
+
+    th {
+        border: 1px solid;
+        width: 13.3%;
+    }
+
+    #titulo {
+        height: 120px;
+        font-size: 28px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       
+    }
+
+    #titulo th {
+        text-align: left;
+        margin-left: 20px;
+        border: 1px solid transparent
+    }
+
+    .bx-time {
+        color: black;
+        font-size: 35px;
+    }
+
+    .dias th {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+        background-color: rgb(226, 226, 226);
+     
+    }
+
+    .materias td {
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid;
+    }
+
+    .geo {
+        background-color: rgb(245, 166, 121);
+    }
+
+    .qui {
+        background-color: rgb(204, 173, 240);
+    }
+
+    .int-ac {
+        background-color: azure;
+    }
+
+    .fis {
+        background-color: rgb(137, 160, 233);
+    }
+
+    .bio {
+        background-color: rgb(162, 241, 146);
+    }
+
+    .his {
+        background-color: rgb(235, 139, 139);
+    }
+
+    .ed {
+        background-color: rgb(219, 181, 110);
+    }
+
+    .pro-in {
+        background-color: rgb(174, 229, 233);
+    }
+
+    .pt {
+        background-color: rgb(195, 220, 241);
+    }
+
+    .art {
+        background-color: rgb(223, 173, 150);
+    }
+
+    .mat {
+        background-color: pink;
+    }
+
+    .dev-web {
+        background-color: rgb(243, 242, 185);
+    }
+
+    .esp {
+        background-color: rgb(231, 90, 90);
+    }
+
+    .clifc {
+        background-color: rgb(231, 168, 189);
+    }
+
+    .pro {
+        background-color: rgb(94, 181, 252);
+    }
+
+    .cinza{
+        background-color: rgb(241, 239, 239);
+    }
+</style>
+
+<body>
+
+    <table>
+
+        <tr id="titulo">
+            <th colspan="6">
+                HORÁRIO ESCOLAR <i class='bx bx-pencil'></i>
+            </th>
+        </tr>
+
+        <tr class="dias">
+            <th><i class='bx bx-time'></i></th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">8:00 às 8:45</td>
+            <td class="geo" rowspan="2">Geografia</td>
+            <td class="qui" rowspan="2">Química</td>
+            <td class="int-ac" rowspan="2">Intr.computação</td>
+            <td class="fis" rowspan="2">Física</td>
+            <td class="bio" rowspan="2">Biologia</td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">8:45 às 9:30</td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">9:30 às 9:45</td>
+            <td colspan="5" class="cinza"> Intervalo
+        </tr>
+
+
+        <tr class="materias">
+            <td class="cinza">9:45 às 10:30</td>
+            <td class="his" rowspan="2">História</td>
+            <td class="ed" rowspan="2">Ed.física</td>
+            <td class="pro-in" rowspan="2">Projeto Integrador</td>
+            <td class="pt" rowspan="2">Português</td>
+            <td class="art" rowspan="2"> Artes</td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">10:30 às 11:15</td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">11:15 às 12:00</td>
+            <td></td>
+            <td class="mat">Matemática</td>
+            <td class="pt">Português</td>
+            <td rowspan="8"></td>
+            <td rowspan="8"></td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">12:00 às 13:00</td>
+            <td colspan="3" class="cinza"> Almoço
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">13:00 às 13:45</td>
+            <td class="dev-web" rowspan="3">Dev.web</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">13:45 às 14:30</td>
+            <td class="esp" rowspan="2">Espanhol</td>
+            <td class="mat" rowspan="2">Matemática</td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">14:30 às 15:15</td>
+
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">15:15 às 15:30</td>
+            <td colspan="3" class="cinza"> Intervalo
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">15:30 às 16:15</td>
+            <td class="clifc" rowspan="2">Clifc</td>
+            <td class="pro"rowspan="2">Programação</td>
+            <td class="pro" rowspan="2">Programação</td>
+        </tr>
+
+        <tr class="materias">
+            <td class="cinza">16:15 às 17:00</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
